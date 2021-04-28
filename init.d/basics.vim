@@ -24,7 +24,7 @@ filetype plugin indent on
 
 " This line is important, see 
 " https://github.com/morhetz/gruvbox/wiki/Terminal-specific#0-recommended-neovimvim-true-color-support
-"set termguicolors
+set termguicolors
 
 highlight ColorColumn ctermbg=magenta
 call matchadd('ColorColumn', '\%81v', 100)
