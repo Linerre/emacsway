@@ -1,6 +1,7 @@
 " General key mappings.
 " Plugin specific mappings in their own module file
-" Last Modified: 2021 Apr 29 15:59
+" use which-key to look up for a mapping
+" Last Modified: 2021 Apr 29 18:51
 let mapleader = '\'
 let maplocalleader = ' '
 nnoremap ; :
@@ -26,16 +27,16 @@ vnoremap  <Leader>" di[<Esc>pa"<Esc>
 vnoremap  <Leader>' di[<Esc>pa'<Esc>
 
 
-" Move btw buffers
+" Buffer operation/movement
 nnoremap <silent> <LocalLeader>j :bnext<CR>
 nnoremap <silent> <LocalLeader>k :bprevious<CR>
 nnoremap <silent> <LocalLeader>x :bd!<CR>
+nnoremap <F2> Da<C-R>=strftime("%Y %b %d %H:%M")<CR><Esc>
+inoremap <F2> <C-R>=strftime("%Y %b %d %H:%M")<CR>
 
+" Window operation/movement 
+noremap <silent> <LocalLeader>q :close<CR>
 
-" Toggle light/dark
-map <silent> <F11> :set bg=light<CR>
-map <silent> <F12> :set bg=dark<CR>
 
 " Files info
 nnoremap <silent> fi 1<C-g>  
-
