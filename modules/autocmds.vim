@@ -1,9 +1,9 @@
-" Auto-cmds for general purposes
-" Filetype specific autocmds stored in ftplugin files
-" Last Modified: 2021 Apr 29 15:11
+" Auto-cmds for all filetypes
+" For a specific filetype, see correspoding ftplugins 
+" Last Modified: 2021 Apr 29 15:33
 augroup general
     au!
-    au BufWritePre init.vim,~/nvim/modules/*.vim ks|call s:LastMod()|'s 
+    au BufWritePre init.vim,~/*/nvim/modules/*.vim ks|call s:LastMod()|'s 
 augroup END
 
 " User-defined functions
