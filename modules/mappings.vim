@@ -1,11 +1,14 @@
-" Key mappings
+" General key mappings.
+" Plugin specific mappings in their own module file
+" Last Modified: 2021 Apr 29 15:59
 let mapleader = '\'
 let maplocalleader = ' '
+nnoremap ; :
 
-noremap <silent> <Leader>ev :e ~/.config/nvim/init.d<CR>
-noremap <silent> <Leader>sv :source $MYVIMRC<CR>
-noremap <silent> <Leader>vv :vsplit<CR> "split view
-noremap <silent> <Leader>vn :vsplit     "split to a new file
+noremap <silent> <LocalLeader>ev :e ~/.config/nvim/init.d<CR>
+noremap <silent> <LocalLeader>sv :source $MYVIMRC<CR>
+noremap <silent> <LocalLeader>vv :vsplit<CR> "split view
+noremap <silent> <LocalLeader>vn :vsplit     "split to a new file
 
 noremap <silent> <C-s> :w<Esc>
 inoremap <silent> <C-s> :w<Esc>
@@ -24,12 +27,9 @@ vnoremap  <Leader>' di[<Esc>pa'<Esc>
 
 
 " Move btw buffers
-nnoremap <silent> <C-j> :bnext<CR>
-nnoremap <silent> <C-k> :bprevious<CR>
-nnoremap <silent> <C-x> :bd!<CR>
-
-" netrw
-nnoremap <silent> <Leader>f :Vexplore<CR>
+nnoremap <silent> <LocalLeader>j :bnext<CR>
+nnoremap <silent> <LocalLeader>k :bprevious<CR>
+nnoremap <silent> <LocalLeader>x :bd!<CR>
 
 
 " Toggle light/dark
