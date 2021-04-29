@@ -1,6 +1,7 @@
-
+" Theme and highlighting related config
+" Last Modified: 2021 Apr 29 15:36
 set background=light
-let g:gruvbox_italics = '1'
+let g:gruvbox_italic = '1'
 let g:gruvbox_contrast_light = 'soft'
 colorscheme gruvbox
 
