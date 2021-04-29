@@ -18,9 +18,9 @@ set clipboard+=unnamedplus
 syntax on
 filetype plugin indent on
 
-"set background=light
-"let g:gruvbox_termcolors=16
-"colorscheme gruvbox
+set background=light
+let g:gruvbox_contrast_light = 'soft'
+colorscheme gruvbox
 
 " This line is important, see 
 " https://github.com/morhetz/gruvbox/wiki/Terminal-specific#0-recommended-neovimvim-true-color-support

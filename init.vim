@@ -7,7 +7,7 @@ Plug 'tpope/vim-surround'
 "Plug 'vimwiki/vimwiki'
 "Plug 'lervag/vimtex'
 "Plug 'mattn/emmet-vim'
-"Plug 'morhetz/gruvbox'
+Plug 'morhetz/gruvbox'
 Plug 'honza/vim-snippets'
 Plug 'Yggdroot/indentLine'
 Plug 'machakann/vim-highlightedyank'
@@ -69,13 +69,14 @@ let g:compe.source.nvim_lsp = v:true
 let g:compe.source.nvim_lua = v:true
 let g:compe.source.vsnip = v:true
 
-"runtime init.d/plugins.vim
-runtime init.d/basics.vim
-runtime init.d/mappings.vim
-runtime init.d/filetype.vim
-runtime init.d/nerdtree.vim
-runtime init.d/statusline.vim
-"runtime init.d/vimtex.vim
-runtime init.d/indentline.vim
-runtime init.d/yankhi.vim
-runtime init.d/buffet.vim
+"runtime modules/plugins.vim
+runtime modules/basics.vim
+runtime modules/mappings.vim
+runtime modules/filetype.vim
+runtime modules/nerdtree.vim
+runtime modules/statusline.vim
+"runtime modules/vimtex.vim
+runtime modules/indentline.vim
+runtime modules/yankhi.vim
+runtime modules/buffet.vim
+
