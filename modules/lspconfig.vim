@@ -1,34 +1,45 @@
 " LSP config
-" Last Modified: 
+" Last Modified: 2021 Apr 30 18:49
 
+" VimLS
 lua << EOF
 require('lspconfig').vimls.setup{
-	cmd = { "vim-language-server", "--stdio" };
-	    filetypes = { "vim" },
-	    init_options = {
-	      diagnostic = {
-		enable = true
-	      },
-	      indexes = {
-		count = 3,
-		gap = 100,
-		projectRootPatterns = { "runtime", "nvim", ".git", "autoload", "plugin" },
-		runtimepath = true
-	      },
-	      iskeyword = "@,48-57,192-255,-#",
-	      runtimepath = "",
-	      suggest = {
-		fromRuntimepath = true,
-		fromVimruntime = true
-	      },
-	      vimruntime = ""
-	    }
-	}
-	root_dir = function(fname)
-		return util.find_git_ancestor(fname) or vim.fn.getcwd()
-	end
+    cmd = { "vim-language-server", "--stdio" };
+        filetypes = { "vim" },
+        init_options = {
+          diagnostic = {
+            enable = true
+          },
+          indexes = {
+            count = 3,
+            gap = 100,
+            projectRootPatterns = { "runtime", "nvim", ".git", "autoload", "plugin" },
+            runtimepath = true
+          },
+          iskeyword = "@,48-57,192-255,-#",
+          runtimepath = "",
+          suggest = {
+            fromRuntimepath = true,
+            fromVimruntime = true
+          },
+          vimruntime = ""
+        }
+    }
+    root_dir = function(fname)
+            return util.find_git_ancestor(fname) or vim.fn.getcwd()
+    end
 EOF
 
+
+" Clangd
+lua << EOF
+require'lspconfig'.clangd.setup{
+    cmd = { "clangd", "--background-index" };
+        filetypes = { "c", "cpp", "objc", "objcpp" }
+    }
+EOF
+
+" nvim completion framework
 set completeopt=menuone,noselect
 let g:compe = {}
 let g:compe.enabled = v:true
