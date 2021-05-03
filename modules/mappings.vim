@@ -1,7 +1,7 @@
 " General key mappings.
 " Plugin specific mappings in their own module file
 " use which-key to look up for a mapping
-" Last Modified: 2021 Apr 29 18:51
+" Last Modified: 2021 Apr 29 19:08
 let mapleader = '\'
 let maplocalleader = ' '
 nnoremap ; :
