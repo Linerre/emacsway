@@ -1,11 +1,12 @@
 " Filetype specific settings
 " such as tabs, shortcuts for comments
+" Last Modified: 2021 Apr 29 17:20
 
 " ==================== VimL  ==================
 aug vim_file
   au!
-  au BufEnter,BufRead *.vim nn <silent> <Leader>\ :s=^\(.*\)$=\" \1<CR>
-  au BufEnter,BufRead *.vim nn <silent> <Leader>/ :s=^" \(.*\)$=\1<CR>
+  au BufEnter,BufRead *.vim nn <silent> <Leader>\ :.s=^\(.*\)$=\" \1<CR>
+  au BufEnter,BufRead *.vim nn <silent> <Leader>/ :.s=^" \(.*\)$=\1<CR>
   au BufEnter,BufRead *.vim nn <silent> ; :
 aug END
 
