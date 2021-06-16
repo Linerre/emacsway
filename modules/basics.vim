@@ -3,7 +3,7 @@
 " 1. boolean
 " 2. number
 " 3  string
-" Last Modified: 2021 Apr 29 21:28
+" Last Modified: 2021 Jun 16 20:53
 
 set number                      " absolute line number
 set nohlsearch                  " not highlight search results
@@ -20,9 +20,9 @@ set shiftwidth=4
 set numberwidth=4
 set conceallevel=0              " to show the bars and stars
 
-set backupdir=~/.local/share/nvim/back            " backup file to .tmp
-set undodir=~/.local/share/nvim/undo              " undo file to .tmp
-set dir=~/.local/share/nvim/swap                  " swap file to .tmp 
+set backupdir=~/.local/share/nvim/site/tmp            " backup file to .tmp
+set undodir=~/.local/share/nvim/site/tmp              " undo file to .tmp
+set dir=~/.local/share/nvim/site/tmp                  " swap file to .tmp 
 set wildmode=longest,list
 set viminfo='20,/20,:20,<30,f1,h,s10,rA:,rB:,n~/.local/share/nvim/viminfo
 set shortmess=filnrwxtToOS 
