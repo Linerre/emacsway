@@ -1,5 +1,5 @@
 " Plugins to load as the first module
-" Last Modified: 2021 Jun 16 20:48
+" Last Modified: 2021 Jun 16 21:20
 call plug#begin('~/.local/share/nvim/site/plugged')
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-compe'
@@ -18,5 +18,5 @@ Plug 'AckslD/nvim-whichkey-setup.lua'
 "Plug 'lervag/vimtex'
 "Plug 'mattn/emmet-vim'
 "Plug 'nvim-lua/completion-nvim'
-" Plug 'morhetz/gruvbox'
+Plug 'morhetz/gruvbox'
 call plug#end()
