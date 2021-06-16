@@ -3,7 +3,7 @@
 " 1. boolean
 " 2. number
 " 3  string
-" Last Modified: 2021 Jun 16 21:16
+" Last Modified: 2021 Jun 16 21:24
 
 set number                      " absolute line number
 set nohlsearch                  " not highlight search results
@@ -29,6 +29,7 @@ set shortmess=filnrwxtToOS
 set iskeyword=@,48-57,192-225,- " two_words; one-word 
 set complete-=i
 set clipboard+=unnamedplus
+set background=light            " override neovim's default: dark
 
 filetype plugin indent on
 syntax enable
