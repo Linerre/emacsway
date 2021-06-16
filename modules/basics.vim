@@ -3,7 +3,7 @@
 " 1. boolean
 " 2. number
 " 3  string
-" Last Modified: 2021 Jun 16 20:53
+" Last Modified: 2021 Jun 16 21:16
 
 set number                      " absolute line number
 set nohlsearch                  " not highlight search results
