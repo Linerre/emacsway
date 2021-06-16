@@ -1,6 +1,6 @@
 " Plugins to load as the first module
-" Last Modified: 2021 May 20 21:42
-call plug#begin('~/.local/share/nvim/shada/plugged')
+" Last Modified: 2021 Jun 16 20:48
+call plug#begin('~/.local/share/nvim/site/plugged')
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-compe'
 Plug 'tpope/vim-surround'
