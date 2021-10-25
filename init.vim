@@ -6,14 +6,11 @@
 " Last Modified: 2021 Jun 16 21:14
 
 runtime modules/plugins.vim
-runtime modules/basics.vim
-" runtime modules/theme.vim
+runtime modules/options.vim
 runtime modules/lspconfig.vim
 runtime modules/autocmds.vim
 runtime modules/mappings.vim
 runtime modules/filetype.vim
 runtime modules/statusline.vim
-" runtime modules/vimtex.vim
 runtime modules/indentline.vim
 runtime modules/yankhi.vim
-" runtime modules/buffet.vim
