@@ -2,7 +2,7 @@
 ** 1.3 Conventions
 *** 1.3.2 ~nil~ and ~t~
 In Elisp, ~nil~ means:
-1. a symbol with
+1. a symbol
 2. logical truth value /false/
 3. the emtpy list ~()~
 #+BEGIN_QUOTE
