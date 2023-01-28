@@ -1,0 +1,38 @@
+* List Processing
+** Lisp Lists
+*** 1.1.1 Lisp Atoms
+Atoms mean words. "Lisp language", are two words, or two *atoms* in
+the Lisp programming language.
+#+BEGIN_QUOTE
+This term comes from the historical meaning of the word atom, which means “indivisible”. As far as Lisp is concerned, the words we have been using in the lists cannot be divided into any smaller parts and still mean the same thing as part of a program;
+#+END_QUOTE
+from:[[https://www.gnu.org/software/emacs/manual/html_node/eintr/Lisp-Atoms.html][Lisp Atoms]]
+
+#+BEGIN_SRC elisp
+;; This is a list of 3 atoms
+'(me you them)
+
+;; The below line, atoms in a list, is called symbolic expressions
+;; or s-expressions
+(print "me")
+
+;; Text between double quotation marks—even sentences or paragraphs—is also an atom.
+'(this list includes "text between quotation marks.")
+#+END_SRC
+
+#+BEGIN_QUOTE
+Also, in many text, the word /form/ is used as synonym for expression.
+
+
+In everyday Lisp conversation, the word “atom” is *not* often used, because programmers usually try to be more specific about what kind of atom they are dealing with. Lisp programming is mostly about *symbols* (and sometimes numbers) within lists.
+
+In Lisp, all of the *quoted text* including the punctuation mark and the blank spaces is *a single atom*. This kind of atom is called a /string/ (for “string of characters”) and is the sort of thing that is used for messages that a computer can print for a human to read.
+#+END_QUOTE
+from:[[https://www.gnu.org/software/emacs/manual/html_node/eintr/Lisp-Atoms.html][Lisp Atoms]]
+*** 1.1.2 Whitespace in Lists
+#+BEGIN_QUOTE
+In brief, a list is between parentheses, a string is between quotation marks, a symbol looks like a word, and a number looks like a number.
+#+END_QUOTE
+from:[[https://www.gnu.org/software/emacs/manual/html_node/eintr/Whitespace-in-Lists.html][Whitespace in Lists]]
+
+And extra whitespace and newlines are ignored by the lisp interpreter.
